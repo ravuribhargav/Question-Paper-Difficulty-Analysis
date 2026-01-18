@@ -8,6 +8,8 @@ This project analyzes **college exam question papers (images)** and automaticall
 It uses **OCR (Tesseract)** to extract text from question paper images, applies **NLP preprocessing**, and then predicts difficulty using a **Machine Learning model**.
 
 ---
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ravuribhargav/Question-Paper-Difficulty-Analysis/blob/main/Question_Paper_Difficulty_Analysis.ipynb)
+
 
 ## 🚀 Features
 - Extracts text from **question paper images** using OCR
