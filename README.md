@@ -1,35 +1,44 @@
 # Question Paper Difficulty Analysis (OCR + NLP)
 
-This project analyzes **college exam question papers (images)** and automatically classifies questions into:
-✅ **Easy**  
-✅ **Medium**  
-✅ **Hard**
-
-It uses **OCR (Tesseract)** to extract text from question paper images, applies **NLP preprocessing**, and then predicts difficulty using a **Machine Learning model**.
-
----
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ravuribhargav/Question-Paper-Difficulty-Analysis/blob/main/Question_Paper_Difficulty_Analysis.ipynb)
 
+This project analyzes **college exam question papers (image format)** and automatically classifies questions into:
 
-## 🚀 Features
-- Extracts text from **question paper images** using OCR
-- Cleans and preprocesses text
-- Segments the paper into individual questions
-- Classifies questions into **Easy / Medium / Hard**
-- Calculates an overall **paper difficulty score**
-- Generates visualizations and saves results
+✅ Easy  
+✅ Medium  
+✅ Hard  
+
+It uses **OCR (Tesseract + OpenCV preprocessing)** to extract text, then applies **NLP + Machine Learning** to predict difficulty levels and calculate an overall paper difficulty score.
 
 ---
 
-## 🧠 Approach / Pipeline
-1. Input: Question paper images (.jpg / .png)
-2. OCR Extraction (Tesseract + OpenCV preprocessing)
-3. Text Cleaning + Normalization
-4. Question Segmentation
-5. Feature Extraction (TF-IDF + optional numeric features)
-6. ML Model: Logistic Regression
-7. Output: Difficulty labels + score + graphs
+## 🚀 Features
+- Extract text from question paper **images** using OCR
+- Clean and preprocess the extracted text
+- Segment the paper into individual questions
+- Classify questions into **Easy / Medium / Hard**
+- Compute overall **paper difficulty score**
+- Visualize results and save outputs
+
+---
+
+## 🧠 Workflow / Pipeline
+1. **Input**: Question paper images (`.jpg`, `.png`, `.jpeg`)
+2. **OCR Extraction**: OpenCV preprocessing + Tesseract OCR
+3. **Text Cleaning**
+4. **Question Segmentation**
+5. **Feature Extraction**: TF-IDF
+6. **Model**: Logistic Regression
+7. **Output**: Difficulty labels + score + graphs
 
 ---
 
 ## 📂 Project Structure
+```text
+Question-Paper-Difficulty-Analysis/
+├── Question_Paper_Difficulty_Analysis.ipynb   # Main notebook
+├── README.md                                  # Project documentation
+├── requirements.txt                           # Python dependencies
+├── data/
+│   └── sample/                                # Sample question paper images
+└── outputs/                                   # Generated results (auto created)
