@@ -42,3 +42,12 @@ Question-Paper-Difficulty-Analysis/
 ├── data/
 │   └── sample/                                # Sample question paper images
 └── outputs/                                   # Generated results (auto created)
+
+## 📊 Sample Outputs
+
+### Overall Difficulty Score
+![Overall Difficulty Score](outputs/overall_difficulty_score.png)
+
+### Difficulty Distribution
+![Difficulty Distribution](outputs/difficulty_distribution.png)
+
