@@ -43,6 +43,8 @@ Question-Paper-Difficulty-Analysis/
 │   └── sample/                                # Sample question paper images
 └── outputs/                                   # Generated results (auto created)
 
+---
+
 ## 📊 Sample Outputs
 
 ### Overall Difficulty Score
